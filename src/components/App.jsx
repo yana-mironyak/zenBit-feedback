@@ -1,16 +1,18 @@
+import { FeedbackPage } from 'pages/FeedbackPage';
+import { Footer } from './Footer';
+import React from 'react';
+import GlobalStyle from 'styles/globalStyle';
+import { ThemeProvider } from "styled-components";
+import theme from 'styles/theme';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010102'
-      }}
-    >
-      React homework template
-    </div>
+    <>
+      <ThemeProvider theme={theme}>
+        <GlobalStyle />
+        <FeedbackPage />
+        <Footer />
+      </ThemeProvider>
+    </>
   );
 };
