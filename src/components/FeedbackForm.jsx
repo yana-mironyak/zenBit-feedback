@@ -7,7 +7,6 @@ export const FeedbackForm = () => {
         reset,
         register,
         handleSubmit,
-        formState: { errors },
     } = useForm();
     
     const onSubmit = ({name, email, message}) => {
