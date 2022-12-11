@@ -43,7 +43,7 @@ export const PinkSmile = styled.div`
 `;
 
 export const GreenSmile = styled.div`
-    position: fixed;
+    position: absolute;
     right: 0;
     width: 40px;
     height: 40px;

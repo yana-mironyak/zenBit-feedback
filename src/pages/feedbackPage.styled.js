@@ -63,9 +63,9 @@ export const Globe = styled.div`
     background-image: none;
 
     @media ${p => p.theme.media.tablet} {
-        position: absolute;
+        position: fixed;
         top: 0px;
-        right: -294px;
+        right: -297px;
         width: 920px;
         height: 920px;
         background-size: contain;
@@ -74,7 +74,7 @@ export const Globe = styled.div`
     }
 
     @media ${p => p.theme.media.desktop} {
-        right: -315px;
+        right: -316px;
     }
 `;
 
@@ -118,7 +118,7 @@ export const Clouds = styled.div`
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 1;
-    width: 1468px;
+    width: 100%;
     height: 877px;
 
     @media ${p => p.theme.media.desktop} {

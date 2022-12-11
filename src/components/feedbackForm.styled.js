@@ -115,10 +115,8 @@ export const Button = styled.button`
     }
 
     @media ${p => p.theme.media.desktop} {
-        margin-bottom: 374px;
         width: 218px;
         height: 73px; 
         font-size: ${p => p.theme.fontSizes.m};
-
     }
 `;
