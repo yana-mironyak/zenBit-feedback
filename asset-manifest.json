@@ -1,13 +1,20 @@
 {
   "files": {
-    "main.css": "/zenBit-feedback-client/static/css/main.7acaea2f.css",
-    "main.js": "/zenBit-feedback-client/static/js/main.6f2e1c5f.js",
+    "main.css": "/zenBit-feedback-client/static/css/main.31d6cfe0.css",
+    "main.js": "/zenBit-feedback-client/static/js/main.601a1861.js",
+    "static/media/globe.png": "/zenBit-feedback-client/static/media/globe.0e89b4e353376cf53613.png",
+    "static/media/clouds.svg": "/zenBit-feedback-client/static/media/clouds.14d2949e29d7ec85c019f38c6abf343e.svg",
+    "static/media/icons.svg": "/zenBit-feedback-client/static/media/icons.d16aa705560b0390eec0f4f49ec4ab8a.svg",
+    "static/media/yellow-smile.svg": "/zenBit-feedback-client/static/media/yellow-smile.25a11ca5f446227ef2c888d182d44011.svg",
+    "static/media/pink-smile.svg": "/zenBit-feedback-client/static/media/pink-smile.578f84afe11391449cf267eef9cd1e41.svg",
+    "static/media/yellow-little-smile.svg": "/zenBit-feedback-client/static/media/yellow-little-smile.7e5cc549e6a8aed0ce5382f6da3f379a.svg",
     "index.html": "/zenBit-feedback-client/index.html",
-    "main.7acaea2f.css.map": "/zenBit-feedback-client/static/css/main.7acaea2f.css.map",
-    "main.6f2e1c5f.js.map": "/zenBit-feedback-client/static/js/main.6f2e1c5f.js.map"
+    "static/media/green-smile.svg": "/zenBit-feedback-client/static/media/green-smile.399df32776421d98ed8c24f3f6672b15.svg",
+    "static/media/sun.svg": "/zenBit-feedback-client/static/media/sun.386530f142eafd073496b272b2d6632d.svg",
+    "main.601a1861.js.map": "/zenBit-feedback-client/static/js/main.601a1861.js.map"
   },
   "entrypoints": [
-    "static/css/main.7acaea2f.css",
-    "static/js/main.6f2e1c5f.js"
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.601a1861.js"
   ]
 }
