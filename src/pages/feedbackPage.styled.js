@@ -119,7 +119,7 @@ export const Clouds = styled.div`
     background-repeat: no-repeat;
     z-index: 1;
     width: 100%;
-    height: 877px;
+    height: 100%;
 
     @media ${p => p.theme.media.desktop} {
         top: 101px;
