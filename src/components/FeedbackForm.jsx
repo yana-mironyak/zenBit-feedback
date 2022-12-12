@@ -14,7 +14,7 @@ export const FeedbackForm = () => {
     const onSubmit = async ({name, email, message}) => {
         try {
             await createFeedback({name, email, message});
-            console.log('feedback saved');
+            console.log('feedback saved!');
         } catch(error) {
             console.log(error);
         }
