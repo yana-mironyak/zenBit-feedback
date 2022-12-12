@@ -1,7 +1,9 @@
 import { useForm } from 'react-hook-form';
+import { useCreateFeedbackMutation } from 'redux/feedbackApi';
 import { Button, Form, Input, MessageInput } from './feedbackForm.styled';
 
 export const FeedbackForm = () => {
+    const [createFeedback, {isLoading}] = useCreateFeedbackMutation();
 
     const {
         reset,
@@ -9,8 +11,13 @@ export const FeedbackForm = () => {
         handleSubmit,
     } = useForm();
     
-    const onSubmit = ({name, email, message}) => {
-        console.log({ name, email, message });
+    const onSubmit = async ({name, email, message}) => {
+        try {
+            await createFeedback({name, email, message});
+            console.log('feedback saved');
+        } catch(error) {
+            console.log(error);
+        }
         reset();
     }
     

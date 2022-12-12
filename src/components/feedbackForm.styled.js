@@ -95,6 +95,7 @@ export const Button = styled.button`
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 110px;
 
     width: 150px;
     height: 50px;       
@@ -115,6 +116,7 @@ export const Button = styled.button`
     }
 
     @media ${p => p.theme.media.desktop} {
+        margin-bottom: 260px;
         width: 218px;
         height: 73px; 
         font-size: ${p => p.theme.fontSizes.m};
