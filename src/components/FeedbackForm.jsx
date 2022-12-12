@@ -3,7 +3,7 @@ import { useCreateFeedbackMutation } from 'redux/feedbackApi';
 import { Button, Form, Input, MessageInput } from './feedbackForm.styled';
 
 export const FeedbackForm = () => {
-    const [createFeedback, {isLoading}] = useCreateFeedbackMutation();
+    const [createFeedback] = useCreateFeedbackMutation();
 
     const {
         reset,
