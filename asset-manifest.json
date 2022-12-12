@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/zenBit-feedback/static/css/main.31d6cfe0.css",
-    "main.js": "/zenBit-feedback/static/js/main.48ee9e5e.js",
+    "main.js": "/zenBit-feedback/static/js/main.a941bac3.js",
     "static/media/globe.png": "/zenBit-feedback/static/media/globe.0e89b4e353376cf53613.png",
     "static/media/clouds.svg": "/zenBit-feedback/static/media/clouds.14d2949e29d7ec85c019f38c6abf343e.svg",
     "static/media/icons.svg": "/zenBit-feedback/static/media/icons.d16aa705560b0390eec0f4f49ec4ab8a.svg",
@@ -11,10 +11,10 @@
     "index.html": "/zenBit-feedback/index.html",
     "static/media/green-smile.svg": "/zenBit-feedback/static/media/green-smile.399df32776421d98ed8c24f3f6672b15.svg",
     "static/media/sun.svg": "/zenBit-feedback/static/media/sun.386530f142eafd073496b272b2d6632d.svg",
-    "main.48ee9e5e.js.map": "/zenBit-feedback/static/js/main.48ee9e5e.js.map"
+    "main.a941bac3.js.map": "/zenBit-feedback/static/js/main.a941bac3.js.map"
   },
   "entrypoints": [
     "static/css/main.31d6cfe0.css",
-    "static/js/main.48ee9e5e.js"
+    "static/js/main.a941bac3.js"
   ]
 }
