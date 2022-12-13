@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
-const BASE_URL = 'http://localhost:8088';
+const BASE_URL = 'https://zenbit-feedback.onrender.com/';
 
 export const feedbackApi = createApi({
     reducerPath: 'feedbackApi',

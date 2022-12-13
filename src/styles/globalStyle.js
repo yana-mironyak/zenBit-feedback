@@ -1,6 +1,12 @@
 import { createGlobalStyle } from "styled-components";
+import font from '../fonts/ApercuArabicPro-Regular.woff2';
 
 const GlobalStyle = createGlobalStyle`
+@font-face {
+  font-family: 'Apercu Arabic Pro';
+  src: url(${font});
+}
+
 body {
   margin: 0;
   background-color: ${p => p.theme.colors.background};

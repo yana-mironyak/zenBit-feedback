@@ -82,6 +82,10 @@ export const SocialIconsLink = styled.a`
 export const SocialIconsItem = styled.svg`
     width: 10px;
     height: 10px;
+    cursor: pointer;
+    :hover {
+        transform: scale(1.4);
+    }
 
      @media ${p => p.theme.media.desktop} {
         width: 15px;

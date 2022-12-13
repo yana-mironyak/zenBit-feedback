@@ -5,8 +5,8 @@ const theme = {
         accent: "#F472B7",
         input: "#DCDCDC",
         btn: "#FAD34F",
+        iconHover: "#46EBB0",
     
-
         text: "#3E3E3E",    
         btnText: "#fff",
         placeholder: "#2D2D2D",

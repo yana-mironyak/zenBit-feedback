@@ -55,7 +55,7 @@ export const MessageInput = styled.textarea`
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 16px;
+    margin-bottom: 1px;
     padding-left: 23px;
     padding-top: 15px;
 
@@ -84,7 +84,7 @@ export const MessageInput = styled.textarea`
     }
 
     @media ${p => p.theme.media.desktop} {
-        margin-bottom: 23px;
+        margin-bottom: 1px;
         height: 189px;
         padding-left: 46px;
         font-size: ${p => p.theme.fontSizes.m};
@@ -120,5 +120,25 @@ export const Button = styled.button`
         width: 218px;
         height: 73px; 
         font-size: ${p => p.theme.fontSizes.m};
+    }
+`;
+
+export const ErrorText = styled.div`
+    margin-left: 16px;
+    &:not(:last-of-type) {
+        margin-bottom: 16px;
+    }
+    font-size: 12px;
+    color: red;
+    font-weight: ${p => p.theme.fontWeights.bold};
+    font-style: italic;
+    text-align: center;
+
+    @media ${p => p.theme.media.tablet} {
+        text-align: start;
+    }
+
+    @media ${p => p.theme.media.desktop} {
+        margin-bottom: 16px;
     }
 `;

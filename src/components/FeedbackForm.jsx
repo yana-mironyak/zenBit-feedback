@@ -1,22 +1,26 @@
 import { useForm } from 'react-hook-form';
 import { useCreateFeedbackMutation } from 'redux/feedbackApi';
-import { Button, Form, Input, MessageInput } from './feedbackForm.styled';
+import { Button, Form, Input, MessageInput, ErrorText } from './feedbackForm.styled';
+import { ToastContainer } from 'react-toastify';
+import { sendSuccess, sendError } from 'utilitis/notification';
+import 'react-toastify/dist/ReactToastify.css';
 
 export const FeedbackForm = () => {
-    const [createFeedback] = useCreateFeedbackMutation();
+    const [createFeedback, { isLoading }] = useCreateFeedbackMutation();
 
     const {
         reset,
         register,
         handleSubmit,
+        formState: {errors},
     } = useForm();
     
     const onSubmit = async ({name, email, message}) => {
         try {
             await createFeedback({name, email, message});
-            console.log('feedback saved!');
+            sendSuccess();
         } catch(error) {
-            console.log(error);
+            sendError();
         }
         reset();
     }
@@ -25,22 +29,26 @@ export const FeedbackForm = () => {
         <Form onSubmit={handleSubmit(onSubmit)}>
             <Input
                 label='Name'
-                {...register ('name', { required: true })}
+                {...register ('name', { required: "Is required" })}
                 type='text'
                 placeholder='Your name*'
             />
+            <ErrorText>{errors?.name && <p>{errors?.name?.message}</p>}</ErrorText>
             <Input
                 label='Email'
-                {...register ('email', { required: true })}
+                {...register ('email', { required: "Is required" })}
                 type='email'
                 placeholder='Your e-mail*'
             />
+            <ErrorText>{errors?.email && <p>{errors?.email?.message}</p>}</ErrorText>
             <MessageInput
                 label='Message'
-                {...register ('message', { required: true })}
+                {...register ('message', { required: "Is required" })}
                 type='text'
                 placeholder='Your message*' />
-            <Button type='submit'>Send message</Button>
+            <ErrorText>{errors?.message && <p>{errors?.message?.message}</p>}</ErrorText>
+            <Button type='submit' disabled={isLoading}>{isLoading ? "Sending..." : "Send message"}</Button>
+            <ToastContainer />
         </Form>
     )
 }
